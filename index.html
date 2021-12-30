@@ -6,17 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Talbes</title>
 
-    <link rel="stylesheet" href="./reset.css" />
+    <!-- <link rel="stylesheet" href="./reset.css" /> -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Text</h1>
-    <p>asdsda</p>
-    <ul>
-      <li>test</li>
-    </ul>
-    <ol>
-      <li>test</li>
-    </ol>
+    <table id="table">
+      <thead>
+        <tr>
+          <td>Header 1 col</td>
+          <td>Header 2 col</td>
+          <td>Header 3 col</td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Text 1 row 1 col</td>
+          <td colspan="2" rowspan="2" >Text 1 row 2 col</td>
+        </tr>
+        <tr>
+          <td>Text 2 row 1 col</td>
+        </tr>
+        <tr>
+          <td>Text 3 row 1 col</td>
+          <td>Text 3 row 2 col</td>
+          <td>Text 3 row 3 col</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>Итого</td>
+          <td colspan="2" >9000</td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
